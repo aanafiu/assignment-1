@@ -82,8 +82,8 @@ nav{
     width: 1000px;
 }
 .boy-logo{
-    width:280px;
-    margin: 30px 0;
+    width:250px;
+    margin:0  auto;
     /* background-color: aqua; */
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
 }
@@ -92,13 +92,14 @@ nav{
     color: #0D1321;
     font-weight:800 ;
     font-size: 48px;
-    margin: 0 0 30px ;
+    margin: 30px 0 30px ;
 
 }
 .all-p{
     color: #0d1321cc;
     font-weight: 400;
     font-size: 16px;
+    line-height: 25px;
 }
 
 .contact-btn{
@@ -110,7 +111,7 @@ nav{
     border-radius: 5px;
     border: 2px solid rgba(255, 255, 255, 0);
     text-decoration: none;
-    margin-top: 30px;
+    margin: 30px auto;
     
 }
 .contact-btn:hover{
@@ -119,6 +120,62 @@ nav{
     cursor: pointer;
     border: 2px solid #0D1321;
 }
+
+/* why web development */
+
+.why{
+    margin: 80px auto;
+    width: 80%;
+    height: 100%;
+    /* background-color: blue; */
+    padding-top: 40px;
+}
+
+.first{
+    text-align: center;
+    margin: 40px auto 70px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.first h1{
+    font-size: 32px;
+    font-weight: 800;
+}
+.second{
+    text-align: left;
+    margin: 0 auto ;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    /* background-color: aqua; */
+}
+.second img{
+    width: 400px;
+    /* background-color: aqua; */
+}
+.second button{
+    
+    /* background-color: aqua; */
+    margin: 30px auto;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+.second-details{
+    width: 50%;
+}
+
+.all-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(13, 19, 33, 0.753);
+    margin: 20px auto;
+}
+
 
 
 
