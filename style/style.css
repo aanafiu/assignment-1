@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* color: #0D1321 */
+
+/* Font Link */
+.azeret-mono-normal {
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header{
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: aqua; */
+    margin: 0 auto;
+
+    padding: 20px 0;
+
+
+}
+nav{
+    padding: 10px 20px;
+    /* background-color: aquamarine; */
+    margin: 0 10%;
+}
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 800;
+    color: #0D1321;
+}
+
+/* Button Primary */
+
+.btn-primary{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0D1321 ;
+    padding: 18px 24px;
+    background-color: white;
+    border: 2px solid #0D1321;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: #0D1321;
+    color: white;
+    border: 2px solid white;
+}
+
+.banner{
+    /* background-color: blue; */
+    height: 100vh ;
+    width: 100%;
+    background-image: url(../assets/Hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-flex{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center; 
+    /* margin: 0 10% ; */
+    width: 1000px;
+}
+.boy-logo{
+    width:280px;
+    margin: 30px 0;
+    /* background-color: aqua; */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+}
+
+.banner-headline{
+    color: #0D1321;
+    font-weight:800 ;
+    font-size: 48px;
+    margin: 0 0 30px ;
+
+}
+.all-p{
+    color: #0d1321cc;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contact-btn{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 25px 50px;
+    background-color: #0D1321;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    text-decoration: none;
+    margin-top: 30px;
+    
+}
+.contact-btn:hover{
+    background-color: white;
+    color: #0D1321;
+    cursor: pointer;
+    border: 2px solid #0D1321;
+}
+
+
+
+
+
+
+
+
+
+
+
