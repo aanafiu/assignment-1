@@ -58,6 +58,7 @@ nav{
     background-color: #0D1321;
     color: white;
     border: 2px solid white;
+    transition: all 0.2s linear;
 }
 
 .banner{
@@ -86,7 +87,7 @@ nav{
     width:250px;
     margin:0  auto;
     /* background-color: aqua; */
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329); */
 }
 
 .banner-headline{
@@ -114,12 +115,14 @@ nav{
     text-decoration: none;
     margin: 30px auto;
     
+    
 }
 .contact-btn:hover{
     background-color: white;
     color: #0D1321;
     cursor: pointer;
     border: 2px solid #0D1321;
+    transition: all 0.2s linear;
 }
 
 /* why web development */
@@ -270,6 +273,7 @@ iframe{
     text-decoration: underline;
     background-color: #203b7a41;
     color: #0D1321;
+    transition: all 0.2s linear;
 }
 
 
@@ -295,11 +299,62 @@ iframe{
     /* text-align: center; */
     gap: 30px;
     margin: 20px auto;
+    border-radius: 5px;
 }
 .next-target img{
     width: 100px;
     height: 100px;
 }
+
+/* Contact */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+    height: 300px;
+    gap: 20px;
+    background-color: aqua;
+    padding: 50px;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.19931722689075626) 100%),url(../assets/handshake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+#contact .all-title{
+    margin:0;
+    color: white ;
+    font-size: 32px;
+    font-weight: 800;
+}
+#contact .all-p{
+    margin:10px auto;
+    color: white ;
+    font-size: 16px;
+    font-weight: 400;
+    width: 80%;
+}
+
+.form input[type="text"]
+{
+    font-size:18px ;
+    width: 550px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 10px 0;
+}
+.form .btn-primary{
+    padding: 20px;
+    border-radius: 10px;
+    /* color: #0D1321; */
+}
+
+
 
 
 
