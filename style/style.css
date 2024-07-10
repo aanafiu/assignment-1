@@ -131,8 +131,8 @@ nav{
     margin: 80px auto;
     width: 80%;
     height: 100%;
-    /* background-color: blue; */
-    padding-top: 40px;
+    background-color: rgba(13, 19, 33, 0.034);
+    padding: 40px 40px;
 }
 
 .first{
@@ -149,14 +149,15 @@ nav{
 }
 .second{
     text-align: left;
-    margin: 0 auto ;
+    margin: 10px auto ;
     padding: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 40px;
-    /* background-color: aqua; */
+    background-color:rgba(255, 255, 255, 0.555);
+    border-radius: 15px;
 }
 .second img{
     width: 400px;
@@ -242,6 +243,7 @@ iframe{
 }
 
 .lang-box{
+    border-radius: 15px;
     padding: 30px;
     /* background-color: aqua; */
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
@@ -357,10 +359,10 @@ iframe{
 
 /* Footer */
 footer{
-    /* background-color: aqua; */
+    background-color: rgba(13, 19, 33, 0.096);
     width:90%;
-    padding: 20px ;
-    margin: 0 auto;
+    padding: 20px 5%;
+    /* margin: 0 auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
