@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* width: 100vw; */
 }
 
 
@@ -15,30 +16,38 @@
 
 header{
     width: 100%;
-    /* height: 100px; */
+    /* position: relative; */
     background-color: rgba(255, 255, 255, 0.568);
     margin: 0 auto;
     position: sticky;
     top: 0px;
-    padding: 10px 0;
+    /* padding: 10px 0; */
+    /* background-color: black; */
+ 
 
 
 }
 nav{
     padding: 10px 20px;
     /* background-color: aquamarine; */
-    margin: 0 10%;
+    margin: 0 auto;
+    position:relative;
+    width: 90vw;
+    
+ 
 }
 .container-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+
     
 }
 
 .logo{
     text-decoration: none;
-    font-size: 35px;
+    font-size: 42px;
     font-weight: 800;
     color: #0D1321;
 }
@@ -85,12 +94,13 @@ nav{
      justify-content: center;
     align-items: center; 
     /* margin: 0 10% ; */
-    width: 1000px;
+    width: 90vw;
     /* position: absolute; */
 }
 .boy-logo{
     width:250px;
     margin:0  auto;
+    flex-grow: 1;
     /* background-color: aqua; */
     /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329); */
 }
@@ -133,20 +143,21 @@ nav{
 /* why web development */
 
 .why{
-    margin: 80px auto;
-    width: 80%;
-    height: 100%;
+    margin: 70px auto 30px;
+    width: 90%;
+    /* height: 100%; */
     background-color: rgba(13, 19, 33, 0.034);
-    padding: 40px 40px;
+    padding: 40px auto;
 }
 
 .first{
     text-align: center;
     margin: 40px auto 70px;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 80vw;
 }
 .first h1{
     font-size: 32px;
@@ -155,7 +166,7 @@ nav{
 .second{
     text-align: left;
     margin: 10px auto ;
-    padding: 50px;
+    /* padding: 50px; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -163,6 +174,7 @@ nav{
     gap: 40px;
     background-color:rgba(255, 255, 255, 0.555);
     border-radius: 15px;
+    width: 80vw;
 }
 .second img{
     width: 400px;
@@ -201,15 +213,15 @@ nav{
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    width: 90%;
-    height: 100%;
+    width:100%;
+    /* height: 100vh; */
     /* background-color: blue; */
     padding-top: 40px;
-    /* background-color: blue; */
+
 }
 .video
 {
-    width: 90%;
+    width: 90vw;
     /* margin: 20px; */
     border: 1px solid rgb(182, 180, 180);
     border-radius:10px ;
@@ -229,7 +241,7 @@ iframe{
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    width: 90%;
+    width: 90vw;
     height: 100%;
     /* background-color: blue; */
     padding-top: 40px;
@@ -237,7 +249,7 @@ iframe{
 }
 
 .lang{
-    width: 100%;
+    width: 80vw;
     display: flex;
     /* align-items: center; */
     justify-content: space-around;
@@ -292,7 +304,7 @@ iframe{
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    width: 90%;
+    width: 90vw;
     height: 100%;
     /* background-color: blue; */
     padding-top: 40px;
@@ -321,10 +333,10 @@ iframe{
     justify-content: center;
     text-align: center;
     margin: 50px auto;
-    width: 80%;
+    width: 80vw;
     height: 300px;
     gap: 20px;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 50px;
     background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.19931722689075626) 100%),url(../assets/handshake.jpg);
     background-repeat: no-repeat;
@@ -346,16 +358,23 @@ iframe{
     width: 80%;
 }
 
+.form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .form input[type="text"]
 {
     font-size:18px ;
-    width: 550px;
+    width: 50%;
     padding: 20px;
     border: none;
     border-radius: 10px;
-    margin: 20px 10px 0;
+    margin: auto 10px ;
 }
 .form .btn-primary{
+    width: 20%;
     padding: 20px;
     border-radius: 10px;
     /* color: #0D1321; */
@@ -365,22 +384,325 @@ iframe{
 /* Footer */
 footer{
     background-color: rgba(13, 19, 33, 0.096);
-    width:90%;
-    padding: 20px 5%;
-    /* margin: 0 auto; */
+    width:100%;
+    /* padding: 20px 0; */
+
+}
+.footer{
+    width:80vw;
+    padding: 20px 0;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* text-align: center; */
-
 }
-footer h1{
+.footer h1{
     font-size: 20px;
     font-weight: 600;
 }
-footer a{
+.footer a{
     text-decoration: none;
-    padding: 0 5px ;
+    padding: 0 10px ;
+}
+
+
+/* Responsive */
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    header{
+        width: 100vw;
+        margin: 10px auto 20px;
+        position: static;
+    }
+
+    nav{
+        padding: 0;
+        position: relative;
+    }
+    .container-flex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+
+    /* BAnner */
+    .banner{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: aqua; */
+        padding: 20px auto;
+        
+    }
+
+    .banner-flex{
+        /* background-color: aquamarine; */
+        /* margin: auto 5%; */
+        height: 100vh;
+        width: 90vw;
+    }
+
+    /* .banner img{
+        flex-grow: 1;
+    } */
+    .boy-logo{
+        flex-grow: 1;
+    }
+    .banner-headline{
+        font-size: 1.5em;
+        margin: 10px auto 20px;
+    }
+    .all-p{
+        font-size: .9em;
+        line-height: 20px;
+    }
+
+    .contact-btn{
+        font-size: 16px;
+        padding: auto 50px;
+        margin: 10px auto ;
+    }
+
+    /* banner end  */
+    .first{
+        /* width: 100vw; */
+        margin: 20px auto;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+
+    }
+    .first h1{
+        font-size: 2em;
+    }
+    /* why start  */
+
+    .second:nth-child(2n){
+        flex-direction: column-reverse;
+        width: 90vw;
+        justify-content: center;
+        margin: 30px auto 20px;  
+    }
+    .second{
+        flex-direction: column;
+        width: 90vw;
+        justify-content: center;
+        margin: 30px auto 0;
+    }
+
+    .second img{
+        width: 90%;
+        /* flex-grow: 1; */
+    }
+
+    .second-details{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .all-title{
+        font-size: 1.8em;
+        margin: 10px auto;
+    }
+
+    .second button{
+        margin: 20px auto;
+        padding: auto 30px;
+        font-size: 1em;
+    }
+
+    /* why end  */
+
+    /* Inspiration start */
+    .inspiration{
+        /* padding: 10px; */
+        width: 80vw;
+        margin: 0 auto;
+    }
+     .video
+    {
+        width: 80vw;
+
+    }
+
+/* current target start */
+
+.current-target{
+
+    margin: 20px auto;
+    width: 100vw;
+}
+.lang{
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Next Target */
+
+.next-target{
+    flex-direction: column;
+}
+.next-target .lang-box{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+/* contact */
+.form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form input[type="text"]
+{
+    font-size:18px ;
+    width: 70vw;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 10px 0;
+}
+.form .btn-primary{
+    width: 30%;
+    /* padding: 20px 30px; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* color: #0D1321; */
+}
+
+/* Footer */
+
+.footer{
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.footer h1{
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+.footer img{
+    flex-grow: 1;
+    
+}
+.footer .social{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:577px) and (max-width: 858px) {
+    
+    header{
+        position: sticky;
+        margin: auto;
+    }
+    .container-flex{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+        /* BAnner */
+        .banner{
+            height: 100vh;
+            width: 100vw;
+            /* background-color: aqua; */
+        }
+    
+        .banner-flex{
+            /* background-color: aquamarine; */
+            margin: auto 5% ;
+            height: 100%;
+            width: 90vw;
+        }
+    
+        /* .banner img{
+            flex-grow: 1;
+        } */
+        .boy-logo{
+            flex-grow: 1;
+        }
+        .banner-headline{
+            font-size: 2.5em;
+            margin: 10px auto 20px;
+        }
+        .all-p{
+            font-size: 1em;
+            line-height: 20px;
+        }
+    
+        .contact-btn{
+            font-size: 18px;
+            padding: auto 50px;
+            margin: 20px auto ;
+        }
+
+        /* Banner End */
+
+
+        /* Why start  */
+
+
+        .second:nth-child(2n){
+            flex-direction: column-reverse;
+            width: 90vw;
+            justify-content: center;
+            margin: 30px auto 0;  
+        }
+        .second{
+            flex-direction: column;
+            width: 90vw;
+            justify-content: center;
+            margin: 30px auto 0;
+        }
+        .second-details{
+            width: 80vw;
+            margin: 1em auto 0;
+        }
+    
+        .all-title{
+            font-size: 1.8em;
+            margin: 0 auto 1em;
+        }
+        .second button{
+            margin: 20px auto;
+            padding: auto 30px;
+            font-size: 1em;
+        }
+
+
+        
+/* next target start */
+
+.current-target{
+
+    margin: 20px auto;
+    width: 100vw;
+}
+.lang{
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+}
 }
 
 
