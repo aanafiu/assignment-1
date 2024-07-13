@@ -618,6 +618,8 @@ footer{
         margin: auto;
     }
     .container-flex{
+        /* height: 200px; */
+        /* position: absolute; */
         align-items: center;
         justify-content: space-between;
     }
@@ -625,7 +627,7 @@ footer{
 
         /* BAnner */
         .banner{
-            height: 100vh;
+            height: 100%;
             width: 100vw;
             /* background-color: aqua; */
         }
