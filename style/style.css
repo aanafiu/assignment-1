@@ -74,7 +74,7 @@ nav{
 /* Banner */
 .banner{
     /* background-color: blue; */
-    height: 100vh ;
+    height: 100% ;
     width: 100%;
     background-image: url(../assets/Hero-bg.png);
     background-repeat: no-repeat;
@@ -436,7 +436,7 @@ footer{
 
     /* BAnner */
     .banner{
-        height: 100vh;
+        height: 100%;
         width: 100vw;
         /* background-color: aqua; */
         padding: 20px auto;
@@ -446,7 +446,7 @@ footer{
     .banner-flex{
         /* background-color: aquamarine; */
         /* margin: auto 5%; */
-        height: 100vh;
+        height: 100%;
         width: 90vw;
     }
 
